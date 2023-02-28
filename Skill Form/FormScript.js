@@ -26,8 +26,6 @@ document.getElementById('submit').onclick = function () {
 
 }
 
-
-
 function getSelectValue() {
     var selectedValue = document.getElementById("levelList").value;
     console.log(selectedValue);
