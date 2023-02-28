@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <title> What do you know? </title>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        table {
+            display: none;
+        }
+    </style>
+   
+    <link rel="stylesheet" href="FormDesign.css" />
+   
+</head>
+
+<body>
+    <div class="header">
+        <div>   <h1>What do you know?</h1></div>
+        <div>   <h3 class="meta">by Berivan Hazal Ertürk</h3></div>
+    </div>
+    <h2>Please add your skills:</h2>
+    
+    <form action="" id="formId">
+        
+        <input type="text" id="skill" placeholder="Add Skill" size="25" class="textbox" required>
+        <div class="combo">
+            <select id="levelList" onchange="getSelectValue();" required>
+                <option>Knowledge Level</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Competent">Competent</option>
+                <option value="Proficient">Proficient</option>
+                <option value="Expert">Expert</option>
+            </select>
+        </div>
+        <input type="submit" id="submit" value="Add" class="button"/>
+        <p>Click on the row you want to remove.</p>
+    </form>
+   
+    <br /><br />
+    
+    <div style="overflow-x:auto;">
+
+        <table id="table">
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+        </table>
+    </div>
+        <script type="text/javascript" src="FormScript.js"></script>
+</body>
+</html>
